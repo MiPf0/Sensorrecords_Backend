@@ -1,0 +1,15 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: SENSORRECORD-SERVICE
+  data:
+    mongodb:
+      authentication-database: admin
+      username: rootuser
+      password: rootpass
+      database: sensorrecords
+      port: 27017
+      host: localhost
+      auto-index-creation: true
