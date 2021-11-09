@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Sensorrrecords_Backend.iml" filepath="$PROJECT_DIR$/.idea/Sensorrrecords_Backend.iml" />
+      <module fileurl="file://$USER_HOME$/Documents/cloud-gateway/cloud-gateway.iml" filepath="$USER_HOME$/Documents/cloud-gateway/cloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sensorrecord-service/sensorrecord-service.iml" filepath="$PROJECT_DIR$/sensorrecord-service/sensorrecord-service.iml" />
+      <module fileurl="file://$USER_HOME$/Documents/service-registry/service-registry.iml" filepath="$USER_HOME$/Documents/service-registry/service-registry.iml" />
+    </modules>
+  </component>
+</project>

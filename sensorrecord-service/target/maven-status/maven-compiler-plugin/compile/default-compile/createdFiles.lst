@@ -1,0 +1,4 @@
+com\lismic\sensorrecordservice\controller\SensorrecordController.class
+com\lismic\sensorrecordservice\model\Sensorrecord.class
+com\lismic\sensorrecordservice\SensorrecordServiceApplication.class
+com\lismic\sensorrecordservice\repository\SensorrecordRepository.class
