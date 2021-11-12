@@ -20,21 +20,22 @@
 
     <dependencies>
 
-        <!-- THIS IS SERVICE REGISTRY !-->
+        <!-- THIS IS SERVICE REGISTRY -->
 
-        <!-- WEB !-->
+        <!-- WEB -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- SERVICE REGISTRY SERVER !-->
+        <!-- SERVICE REGISTRY SERVER -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <version>3.0.4</version>
         </dependency>
 
-        <!-- TEST !-->
+        <!-- TEST -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
