@@ -1,4 +1,4 @@
-package com.dailycodebuffer.cloud.gateway;
+package com.lismic.cloud.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
