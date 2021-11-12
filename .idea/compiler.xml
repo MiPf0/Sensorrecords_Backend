@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="loadbalancing-test-service" />
+        <module name="sensorrecord-service" />
+        <module name="cloud-config-server" />
+        <module name="cloud-gateway" />
+        <module name="service-registry" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-config-server" target="1.5" />
+      <module name="cloud-gateway" target="1.5" />
+      <module name="loadbalancing-test-service" target="1.5" />
+      <module name="sensorrecord-service" target="1.5" />
+      <module name="service-registry" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="service-registry" options="-parameters" />
+    </option>
+  </component>
+</project>

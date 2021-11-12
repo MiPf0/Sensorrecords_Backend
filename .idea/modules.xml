@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Sensorrecords_Backend.iml" filepath="$PROJECT_DIR$/.idea/Sensorrecords_Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-config-server/cloud-config-server.iml" filepath="$PROJECT_DIR$/cloud-config-server/cloud-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-gateway/cloud-gateway.iml" filepath="$PROJECT_DIR$/cloud-gateway/cloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadbalancing-test-service/loadbalancing-test-service.iml" filepath="$PROJECT_DIR$/loadbalancing-test-service/loadbalancing-test-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sensorrecord-service/sensorrecord-service.iml" filepath="$PROJECT_DIR$/sensorrecord-service/sensorrecord-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/service-registry/service-registry.iml" />
     </modules>
   </component>
 </project>
