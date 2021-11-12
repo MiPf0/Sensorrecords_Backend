@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @Repository
 public interface SensorrecordRepository extends MongoRepository<Sensorrecord, String> {
-    Optional<Sensorrecord> findById(int id);
+    Optional<Sensorrecord> findById(String id);
     List<Sensorrecord> findSensorrecordsBySensorId(String sensorId);
-    void deleteById(int id);
+    void deleteById(String id);
 }

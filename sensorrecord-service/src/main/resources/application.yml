@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: SENSORRECORD-SERVICE
+
   data:
     mongodb:
       authentication-database: admin

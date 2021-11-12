@@ -7,8 +7,6 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.security.Timestamp;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,8 +15,10 @@ import java.security.Timestamp;
 public class Sensorrecord {
 
     @Id
-    private ObjectId id;
+    private ObjectId objectId;
     private String sensorId; //aplhanumeric
     private String temperature;
     private String humidity;
+    private boolean showData = false;
+
 }
