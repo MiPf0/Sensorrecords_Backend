@@ -17,7 +17,7 @@
     <bytecodeTargetLevel>
       <module name="cloud-config-server" target="11" />
       <module name="cloud-gateway" target="11" />
-      <module name="loadbalancing-test-service" target="1.5" />
+      <module name="loadbalancing-test-service" target="11" />
       <module name="sensorrecord-service" target="11" />
       <module name="service-registry" target="11" />
     </bytecodeTargetLevel>
@@ -26,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud-config-server" options="-parameters" />
       <module name="cloud-gateway" options="-parameters" />
+      <module name="loadbalancing-test-service" options="-parameters" />
       <module name="sensorrecord-service" options="-parameters" />
       <module name="service-registry" options="-parameters" />
     </option>
