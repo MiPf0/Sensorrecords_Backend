@@ -20,6 +20,7 @@ public class Sensorrecord {
     @Id
     private String objectId = String.valueOf(new ObjectId());
     @CreatedDate
+    private String date = String.valueOf(new ObjectId().getDate());
     private String timestamp = String.valueOf(new ObjectId().getTimestamp());
     private String sensorId; //aplhanumeric
     private String temperature;

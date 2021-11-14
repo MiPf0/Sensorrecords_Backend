@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="implemented dynamic port assignment for sensorrecord service in order to allow several instances easily">
-      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="updated sensorrecord model in order to not have nested object in it">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/loadbalancing-test-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/model/Sensorrecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/model/Sensorrecord.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +75,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoadbalancingTesterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" nameIsGenerated="true">
+      <module name="loadbalancing-test-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lismic.loadbalancingtester.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lismic.loadbalancingtester.LoadbalancingTesterApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SensorrecordServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="sensorrecord-service" />
       <extension name="coverage">
@@ -116,14 +132,15 @@
       <item itemvalue="Spring Boot.CloudConfigServerApplication" />
       <item itemvalue="Spring Boot.CloudGatewayApplication" />
       <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
+      <item itemvalue="Spring Boot.LoadbalancingTesterApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
+        <item itemvalue="Spring Boot.CloudConfigServerApplication" />
         <item itemvalue="Spring Boot.CloudGatewayApplication" />
         <item itemvalue="Spring Boot.ServiceRegistryApplication" />
         <item itemvalue="Docker.sensorrecord-service: Compose Deployment" />
-        <item itemvalue="Spring Boot.CloudConfigServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +161,7 @@
       <workItem from="1636826886026" duration="5042000" />
       <workItem from="1636838603832" duration="1753000" />
       <workItem from="1636840557981" duration="3614000" />
-      <workItem from="1636896186049" duration="4743000" />
+      <workItem from="1636896186049" duration="5906000" />
     </task>
     <task id="LOCAL-00001" summary="unified project structure to JDK 11&#10;made small adjustments">
       <created>1636757797645</created>
@@ -167,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636861887381</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated sensorrecord model in order to not have nested object in it">
+      <created>1636904227610</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636904227610</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +213,7 @@
     <MESSAGE value="unified project structure to JDK 11&#10;made small adjustments" />
     <MESSAGE value="added Javadoc" />
     <MESSAGE value="implemented dynamic port assignment for sensorrecord service in order to allow several instances easily" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented dynamic port assignment for sensorrecord service in order to allow several instances easily" />
+    <MESSAGE value="updated sensorrecord model in order to not have nested object in it" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated sensorrecord model in order to not have nested object in it" />
   </component>
 </project>
