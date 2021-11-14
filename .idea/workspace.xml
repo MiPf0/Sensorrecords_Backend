@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="updated sensorrecord model in order to not have nested object in it">
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="updated sensorrecord model with date field">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/loadbalancing-test-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/model/Sensorrecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/model/Sensorrecord.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SensorrecordServiceApplication">
+  <component name="RunManager" selected="Spring Boot.LoadbalancingTesterApplication">
     <configuration name="CloudConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-config-server" />
       <extension name="coverage">
@@ -128,18 +126,18 @@
     </configuration>
     <list>
       <item itemvalue="Docker.sensorrecord-service: Compose Deployment" />
+      <item itemvalue="Spring Boot.LoadbalancingTesterApplication" />
       <item itemvalue="Spring Boot.ServiceRegistryApplication" />
       <item itemvalue="Spring Boot.CloudConfigServerApplication" />
       <item itemvalue="Spring Boot.CloudGatewayApplication" />
       <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
-      <item itemvalue="Spring Boot.LoadbalancingTesterApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
-        <item itemvalue="Spring Boot.CloudConfigServerApplication" />
         <item itemvalue="Spring Boot.CloudGatewayApplication" />
+        <item itemvalue="Spring Boot.CloudConfigServerApplication" />
         <item itemvalue="Spring Boot.ServiceRegistryApplication" />
+        <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
         <item itemvalue="Docker.sensorrecord-service: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -161,7 +159,7 @@
       <workItem from="1636826886026" duration="5042000" />
       <workItem from="1636838603832" duration="1753000" />
       <workItem from="1636840557981" duration="3614000" />
-      <workItem from="1636896186049" duration="5906000" />
+      <workItem from="1636896186049" duration="9417000" />
     </task>
     <task id="LOCAL-00001" summary="unified project structure to JDK 11&#10;made small adjustments">
       <created>1636757797645</created>
@@ -191,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636904227610</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated sensorrecord model with date field">
+      <created>1636905389387</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636905389387</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +219,7 @@
     <MESSAGE value="added Javadoc" />
     <MESSAGE value="implemented dynamic port assignment for sensorrecord service in order to allow several instances easily" />
     <MESSAGE value="updated sensorrecord model in order to not have nested object in it" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated sensorrecord model in order to not have nested object in it" />
+    <MESSAGE value="updated sensorrecord model with date field" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated sensorrecord model with date field" />
   </component>
 </project>
