@@ -22,7 +22,7 @@
 
     <dependencies>
 
-        <!-- THIS IS DEPARTMENT SERVICE -->
+        <!-- THIS IS SENSORRECORD SERVICE -->
 
         <!-- WEB -->
         <dependency>
