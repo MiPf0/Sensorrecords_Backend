@@ -20,7 +20,7 @@ public class SensorrecordController {
     public String saveSensorrecord(@RequestBody Sensorrecord sensorrecord) {
         repository.save(sensorrecord);
         log.info("Inside saveSensorrecord method of SensorrecordController");
-        return "Added sensor record with id : " + sensorrecord.getObjectId() + "; with Timestamp: " + sensorrecord.getObjectId().getTimestamp();
+        return "Added sensor record with id : " + sensorrecord.getObjectId() + "; with Timestamp: " + sensorrecord.getTimestamp();
     }
 
     @GetMapping("/sensorrecords/findAllSensorrecords")
