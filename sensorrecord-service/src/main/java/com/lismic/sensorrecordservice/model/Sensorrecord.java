@@ -22,7 +22,7 @@ public class Sensorrecord {
     @CreatedDate
     private String date = String.valueOf(new ObjectId().getDate());
     private String timestamp = String.valueOf(new ObjectId().getTimestamp());
-    private String sensor_id; //aplhanumeric
+    private String sensorId; //aplhanumeric
     private String temperature;
     private String humidity;
     private boolean showData = false;

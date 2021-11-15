@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="updated sensorrecord model with date field">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/repository/SensorrecordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/repository/SensorrecordRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LoadbalancingTesterApplication">
+  <component name="RunManager" selected="Spring Boot.SensorrecordServiceApplication">
     <configuration name="CloudConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-config-server" />
       <extension name="coverage">
@@ -134,10 +136,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
         <item itemvalue="Spring Boot.CloudGatewayApplication" />
         <item itemvalue="Spring Boot.CloudConfigServerApplication" />
         <item itemvalue="Spring Boot.ServiceRegistryApplication" />
-        <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
         <item itemvalue="Docker.sensorrecord-service: Compose Deployment" />
       </list>
     </recent_temporary>
