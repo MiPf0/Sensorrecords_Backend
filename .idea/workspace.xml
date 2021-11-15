@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="try new CORS solution in Controller (Sensorrecordservice), also added additional configuration for that in application.proerties/yml">
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="deleated CORS adjustments as system failed - try to disable CORS in browser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensorrecord-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/SensorrecordServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/SensorrecordServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +80,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SensorrecordServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="SensorrecordServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="sensorrecord-service" />
       <extension name="coverage">
         <pattern>
@@ -93,6 +89,8 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lismic.sensorrecordservice.SensorrecordServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -239,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637004358218</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="deleated CORS adjustments as system failed - try to disable CORS in browser">
+      <created>1637009483199</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1637009483199</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +275,7 @@
     <MESSAGE value="added Swagger UI to API Gateway" />
     <MESSAGE value="removed Swagger from API Gateway&#10;added a new Bean for CORS issue in order to address all HTTP methods, not only GET" />
     <MESSAGE value="try new CORS solution in Controller (Sensorrecordservice), also added additional configuration for that in application.proerties/yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="try new CORS solution in Controller (Sensorrecordservice), also added additional configuration for that in application.proerties/yml" />
+    <MESSAGE value="deleated CORS adjustments as system failed - try to disable CORS in browser" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleated CORS adjustments as system failed - try to disable CORS in browser" />
   </component>
 </project>
