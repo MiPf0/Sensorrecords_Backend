@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="changed order of dependencies in Pom.xml of API-Gateway server">
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="added PutMapping">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensorrecord-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/SensorrecordServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/SensorrecordServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636991681626</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added PutMapping">
+      <created>1636994621981</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636994621981</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +246,7 @@
     <MESSAGE value="updated sensorrecord model with date field" />
     <MESSAGE value="changed sensorrecord model field &quot;sensor_id&quot; back to &quot;sensorId&quot;" />
     <MESSAGE value="changed order of dependencies in Pom.xml of API-Gateway server" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed order of dependencies in Pom.xml of API-Gateway server" />
+    <MESSAGE value="added PutMapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="added PutMapping" />
   </component>
 </project>

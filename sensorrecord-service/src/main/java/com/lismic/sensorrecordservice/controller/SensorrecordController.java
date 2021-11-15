@@ -43,6 +43,13 @@ public class SensorrecordController {
         return repository.findSensorrecordsBySensorId(sensorId);
     }
 
+    //@GetMapping("/sensorrecords/findNewestEntryPerSensorId")
+    //public List<Sensorrecord> findNewestEntryPerSensorId() {
+    //    List<Sensorrecord> allSensorrecords = repository.findAll();
+    //    List<Sensorrecord> newestEntryPerSensorId;
+    //
+    //}
+
     @PutMapping("/sensorrecords/updateSensorrecord/{id}")
     public ResponseEntity<Sensorrecord> updateSensorrecord(@PathVariable("id") String id, @RequestBody Sensorrecord sensorrecord) {
         Optional<Sensorrecord> optionalSensorrecord = repository.findById(id);
