@@ -8,10 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @RestController
 @Slf4j
@@ -45,20 +42,18 @@ public class SensorrecordController {
         return repository.findSensorrecordsBySensorId(sensorId);
     }
 
-    /*@GetMapping("/sensorrecords/findNewestEntryPerSensorId")
+    /*
+    @GetMapping("/sensorrecords/findNewestEntryPerSensorId")
     public List<Sensorrecord> findNewestEntryPerSensorId() {
 
         List<Sensorrecord> allSensorrecords = repository.findAll();
-        List<Sensorrecord> newestEntryPerSensorId;
 
         Collections.sort(allSensorrecords, Comparator.comparing(Sensorrecord::getTimestamp));
         Collections.sort(allSensorrecords, Comparator.comparing(Sensorrecord::getSensorId));
 
-        for(Sensorrecord sr : allSensorrecords) {
-            String sensorId = sr.getSensorId();
-
-        }
-    }*/
+        return allSensorrecords;
+    }
+    */
 
     @PutMapping("/sensorrecords/updateSensorrecord/{id}")
     public ResponseEntity<Sensorrecord> updateSensorrecord(@PathVariable("id") String id, @RequestBody Sensorrecord sensorrecord) {

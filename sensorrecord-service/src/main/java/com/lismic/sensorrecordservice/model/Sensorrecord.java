@@ -26,4 +26,5 @@ public class Sensorrecord {
     private String temperature;
     private String humidity;
     private boolean showData = false;
+
 }

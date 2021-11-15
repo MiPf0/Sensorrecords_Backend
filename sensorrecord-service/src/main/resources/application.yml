@@ -9,6 +9,11 @@ spring:
   application:
     name: SENSORRECORD-SERVICE
 
+security:
+  basic:
+    enable: false
+  ignored: /**
+
   data:
     mongodb:
       authentication-database: admin
