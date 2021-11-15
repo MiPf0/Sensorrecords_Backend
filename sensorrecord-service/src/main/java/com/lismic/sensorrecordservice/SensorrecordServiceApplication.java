@@ -28,7 +28,19 @@ public class SensorrecordServiceApplication {
         SpringApplication.run(SensorrecordServiceApplication.class, args);
     }
 
-    @EnableWebSecurity
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**")
+                        .allowedOrigins("*")
+                        .allowedMethods("GET", "PUT", "POST", "PATCH", "DELETE", "OPTIONS");
+            }
+        };
+    }
+
+    /*@EnableWebSecurity
     public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         @Override
@@ -36,5 +48,5 @@ public class SensorrecordServiceApplication {
             http.cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues());
         }
 
-    }
+    }*/
 }
