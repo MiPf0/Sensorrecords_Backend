@@ -4,9 +4,13 @@ import com.lismic.sensorrecordservice.model.Sensorrecord;
 import com.lismic.sensorrecordservice.repository.SensorrecordRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.*;
 
@@ -18,6 +22,7 @@ public class SensorrecordController {
     private SensorrecordRepository repository;
 
     @PostMapping("/sensorrecords/addSensorrecord")
+    @CrossOrigin(origins = "http://localhost:9191")
     public String saveSensorrecord(@RequestBody Sensorrecord sensorrecord) {
         repository.save(sensorrecord);
         log.info("Inside saveSensorrecord method of SensorrecordController");
@@ -25,25 +30,28 @@ public class SensorrecordController {
     }
 
     @GetMapping("/sensorrecords/findAllSensorrecords")
+    @CrossOrigin(origins = "http://localhost:9191")
     public List<Sensorrecord> getSensorrecords() {
         log.info("Inside getSensorrecords method of SensorrecordController");
         return repository.findAll();
     }
 
     @GetMapping("/sensorrecords/findSensorrecord/{id}")
+    @CrossOrigin(origins = "http://localhost:9191")
     public Optional<Sensorrecord> getSensorrecord(@PathVariable String id) {
         log.info("Inside getSensorrecord method of SensorrecordController");
         return repository.findById(id);
     }
 
     @GetMapping("/sensorrecords/findSensorrecords/sensors/{sensorId}")
+    @CrossOrigin(origins = "http://localhost:9191")
     public List<Sensorrecord> getSensorrecords(@PathVariable String sensorId) {
         log.info("Inside getSensorrecord method of SensorrecordController");
         return repository.findSensorrecordsBySensorId(sensorId);
     }
 
-    /*
-    @GetMapping("/sensorrecords/findNewestEntryPerSensorId")
+    /*@GetMapping("/sensorrecords/findNewestEntryPerSensorId")
+    @CrossOrigin(origins = "http://localhost:9191")
     public List<Sensorrecord> findNewestEntryPerSensorId() {
 
         List<Sensorrecord> allSensorrecords = repository.findAll();
@@ -52,10 +60,10 @@ public class SensorrecordController {
         Collections.sort(allSensorrecords, Comparator.comparing(Sensorrecord::getSensorId));
 
         return allSensorrecords;
-    }
-    */
+    }*/
 
     @PutMapping("/sensorrecords/updateSensorrecord/{id}")
+    @CrossOrigin(origins = "http://localhost:9191")
     public ResponseEntity<Sensorrecord> updateSensorrecord(@PathVariable("id") String id, @RequestBody Sensorrecord sensorrecord) {
         Optional<Sensorrecord> optionalSensorrecord = repository.findById(id);
 
@@ -75,6 +83,7 @@ public class SensorrecordController {
 
 
     @DeleteMapping("/sensorrecords/deleteSensorrecord/{id}")
+    @CrossOrigin(origins = "http://localhost:9191")
     public String deleteSensorrecord(@PathVariable String id) {
         repository.deleteById(id);
         log.info("Inside deleteSensorrecord method of SensorrecordController");

@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="removed Swagger from API Gateway&#10;added a new Bean for CORS issue in order to address all HTTP methods, not only GET">
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="try new CORS solution in Controller (Sensorrecordservice), also added additional configuration for that in application.proerties/yml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensorrecord-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/SensorrecordServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/SensorrecordServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/model/Sensorrecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/model/Sensorrecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CloudGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.SensorrecordServiceApplication">
     <configuration name="CloudConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-config-server" />
       <extension name="coverage">
@@ -72,6 +73,13 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lismic.cloud.gateway.CloudGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoadbalancingTesterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="loadbalancing-test-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lismic.loadbalancingtester.LoadbalancingTesterApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,11 +124,12 @@
       <item itemvalue="Spring Boot.CloudConfigServerApplication" />
       <item itemvalue="Spring Boot.CloudGatewayApplication" />
       <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
+      <item itemvalue="Spring Boot.LoadbalancingTesterApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CloudGatewayApplication" />
         <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
+        <item itemvalue="Spring Boot.CloudGatewayApplication" />
         <item itemvalue="Spring Boot.CloudConfigServerApplication" />
         <item itemvalue="Spring Boot.ServiceRegistryApplication" />
         <item itemvalue="Docker.sensorrecord-service: Compose Deployment" />
@@ -223,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637000081670</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="try new CORS solution in Controller (Sensorrecordservice), also added additional configuration for that in application.proerties/yml">
+      <created>1637004358218</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1637004358218</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +269,7 @@
     <MESSAGE value="added CORS configuration to Controller of Sensorrecord Service" />
     <MESSAGE value="added Swagger UI to API Gateway" />
     <MESSAGE value="removed Swagger from API Gateway&#10;added a new Bean for CORS issue in order to address all HTTP methods, not only GET" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed Swagger from API Gateway&#10;added a new Bean for CORS issue in order to address all HTTP methods, not only GET" />
+    <MESSAGE value="try new CORS solution in Controller (Sensorrecordservice), also added additional configuration for that in application.proerties/yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="try new CORS solution in Controller (Sensorrecordservice), also added additional configuration for that in application.proerties/yml" />
   </component>
 </project>
