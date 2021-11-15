@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="changed sensorrecord model field &quot;sensor_id&quot; back to &quot;sensorId&quot;">
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="changed order of dependencies in Pom.xml of API-Gateway server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -204,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636989006457</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changed order of dependencies in Pom.xml of API-Gateway server">
+      <created>1636991681626</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1636991681626</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +236,7 @@
     <MESSAGE value="updated sensorrecord model in order to not have nested object in it" />
     <MESSAGE value="updated sensorrecord model with date field" />
     <MESSAGE value="changed sensorrecord model field &quot;sensor_id&quot; back to &quot;sensorId&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed sensorrecord model field &quot;sensor_id&quot; back to &quot;sensorId&quot;" />
+    <MESSAGE value="changed order of dependencies in Pom.xml of API-Gateway server" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed order of dependencies in Pom.xml of API-Gateway server" />
   </component>
 </project>

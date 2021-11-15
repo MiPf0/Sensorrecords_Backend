@@ -4,6 +4,8 @@ import com.lismic.sensorrecordservice.model.Sensorrecord;
 import com.lismic.sensorrecordservice.repository.SensorrecordRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,6 +42,25 @@ public class SensorrecordController {
         log.info("Inside getSensorrecord method of SensorrecordController");
         return repository.findSensorrecordsBySensorId(sensorId);
     }
+
+    @PutMapping("/sensorrecords/updateSensorrecord/{id}")
+    public ResponseEntity<Sensorrecord> updateSensorrecord(@PathVariable("id") String id, @RequestBody Sensorrecord sensorrecord) {
+        Optional<Sensorrecord> optionalSensorrecord = repository.findById(id);
+
+        if (optionalSensorrecord.isPresent()) {
+            Sensorrecord _sensorrecord = optionalSensorrecord.get();
+            _sensorrecord.setDate(sensorrecord.getDate());
+            _sensorrecord.setTimestamp(sensorrecord.getTimestamp());
+            _sensorrecord.setSensorId(sensorrecord.getSensorId());
+            _sensorrecord.setTemperature(sensorrecord.getTemperature());
+            _sensorrecord.setHumidity(sensorrecord.getHumidity());
+            _sensorrecord.setShowData(sensorrecord.isShowData());
+            return new ResponseEntity<>(repository.save(_sensorrecord), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
 
     @DeleteMapping("/sensorrecords/deleteSensorrecord/{id}")
     public String deleteSensorrecord(@PathVariable String id) {
