@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="edited cloud gateway application properties for avoiding CORS error">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
-    </list>
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="implemented Bean in API Gateway for defining routes by extending CORS-Configuration and deleted routes in properties file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +153,7 @@
       <workItem from="1638112584202" duration="5365000" />
       <workItem from="1638207377648" duration="2000" />
       <workItem from="1638465637758" duration="5506000" />
-      <workItem from="1638612754001" duration="1286000" />
+      <workItem from="1638612754001" duration="1619000" />
     </task>
     <task id="LOCAL-00001" summary="unified project structure to JDK 11&#10;made small adjustments">
       <created>1636757797645</created>
@@ -266,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637016107247</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="implemented Bean in API Gateway for defining routes by extending CORS-Configuration and deleted routes in properties file">
+      <created>1638614117000</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1638614117000</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +301,7 @@
     <MESSAGE value="deleated CORS adjustments as system failed - try to disable CORS in browser" />
     <MESSAGE value="deleted CrossOrigin adjustments for CORS which did not work" />
     <MESSAGE value="edited cloud gateway application properties for avoiding CORS error" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited cloud gateway application properties for avoiding CORS error" />
+    <MESSAGE value="implemented Bean in API Gateway for defining routes by extending CORS-Configuration and deleted routes in properties file" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented Bean in API Gateway for defining routes by extending CORS-Configuration and deleted routes in properties file" />
   </component>
 </project>
