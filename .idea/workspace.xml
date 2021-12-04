@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="deleted CrossOrigin adjustments for CORS which did not work">
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="edited cloud gateway application properties for avoiding CORS error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
     </list>
@@ -31,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sensorrecord-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -119,11 +121,11 @@
     </configuration>
     <list>
       <item itemvalue="Docker.sensorrecord-service: Compose Deployment" />
+      <item itemvalue="Spring Boot.LoadbalancingTesterApplication" />
       <item itemvalue="Spring Boot.ServiceRegistryApplication" />
       <item itemvalue="Spring Boot.CloudConfigServerApplication" />
       <item itemvalue="Spring Boot.CloudGatewayApplication" />
       <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
-      <item itemvalue="Spring Boot.LoadbalancingTesterApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -153,6 +155,11 @@
       <workItem from="1636838603832" duration="1753000" />
       <workItem from="1636840557981" duration="3614000" />
       <workItem from="1636896186049" duration="9417000" />
+      <workItem from="1637062160342" duration="2595000" />
+      <workItem from="1638112584202" duration="5365000" />
+      <workItem from="1638207377648" duration="2000" />
+      <workItem from="1638465637758" duration="5506000" />
+      <workItem from="1638612754001" duration="1286000" />
     </task>
     <task id="LOCAL-00001" summary="unified project structure to JDK 11&#10;made small adjustments">
       <created>1636757797645</created>
@@ -252,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637010394056</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="edited cloud gateway application properties for avoiding CORS error">
+      <created>1637016107247</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1637016107247</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +299,7 @@
     <MESSAGE value="try new CORS solution in Controller (Sensorrecordservice), also added additional configuration for that in application.proerties/yml" />
     <MESSAGE value="deleated CORS adjustments as system failed - try to disable CORS in browser" />
     <MESSAGE value="deleted CrossOrigin adjustments for CORS which did not work" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted CrossOrigin adjustments for CORS which did not work" />
+    <MESSAGE value="edited cloud gateway application properties for avoiding CORS error" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited cloud gateway application properties for avoiding CORS error" />
   </component>
 </project>

@@ -46,12 +46,24 @@ public class SensorrecordController {
         return repository.findSensorrecordsBySensorId(sensorId);
     }
 
-    /*@GetMapping("/sensorrecords/findNewestEntryPerSensorId")
+    @GetMapping("/sensorrecords/findNewestEntryPerSensorId")
     @CrossOrigin(origins = "localhost:3000")
     public List<Sensorrecord> findNewestEntryPerSensorId() {
         List<Sensorrecord> allRecords = repository.findAll();
-        //
-    }*/
+        allRecords.sort(Comparator.comparing(Sensorrecord::getTimestamp));
+        allRecords.sort(Comparator.comparing(Sensorrecord::getSensorId));
+
+        /*String currentSensorId = "";
+
+        for (Sensorrecord sr : allRecords) {
+            if (sr.getSensorId().equals(currentSensorId)) {
+                allRecords.remove(sr);
+            }
+            currentSensorId = sr.getSensorId();
+        }*/
+
+        return allRecords;
+    }
 
     @PutMapping("/sensorrecords/updateSensorrecord/{id}")
     @CrossOrigin(origins = "localhost:3000")
