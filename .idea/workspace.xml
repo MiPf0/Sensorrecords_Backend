@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="implemented Bean in API Gateway for defining routes by extending CORS-Configuration and deleted routes in properties file" />
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="changed in config server main application &quot;@EnableEurekaClient&quot; to &quot;@EnableDiscoveryClient&quot; in order to have same annotation for all eureka clients">
+      <change afterPath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +33,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -124,9 +132,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
+        <item itemvalue="Spring Boot.ServiceRegistryApplication" />
         <item itemvalue="Spring Boot.CloudGatewayApplication" />
         <item itemvalue="Spring Boot.CloudConfigServerApplication" />
-        <item itemvalue="Spring Boot.ServiceRegistryApplication" />
         <item itemvalue="Docker.sensorrecord-service: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -153,7 +161,8 @@
       <workItem from="1638112584202" duration="5365000" />
       <workItem from="1638207377648" duration="2000" />
       <workItem from="1638465637758" duration="5506000" />
-      <workItem from="1638612754001" duration="1619000" />
+      <workItem from="1638612754001" duration="5800000" />
+      <workItem from="1638633916935" duration="2778000" />
     </task>
     <task id="LOCAL-00001" summary="unified project structure to JDK 11&#10;made small adjustments">
       <created>1636757797645</created>
@@ -267,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638614117000</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="changed in config server main application &quot;@EnableEurekaClient&quot; to &quot;@EnableDiscoveryClient&quot; in order to have same annotation for all eureka clients">
+      <created>1638614663747</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1638614663747</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +318,7 @@
     <MESSAGE value="deleted CrossOrigin adjustments for CORS which did not work" />
     <MESSAGE value="edited cloud gateway application properties for avoiding CORS error" />
     <MESSAGE value="implemented Bean in API Gateway for defining routes by extending CORS-Configuration and deleted routes in properties file" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented Bean in API Gateway for defining routes by extending CORS-Configuration and deleted routes in properties file" />
+    <MESSAGE value="changed in config server main application &quot;@EnableEurekaClient&quot; to &quot;@EnableDiscoveryClient&quot; in order to have same annotation for all eureka clients" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed in config server main application &quot;@EnableEurekaClient&quot; to &quot;@EnableDiscoveryClient&quot; in order to have same annotation for all eureka clients" />
   </component>
 </project>

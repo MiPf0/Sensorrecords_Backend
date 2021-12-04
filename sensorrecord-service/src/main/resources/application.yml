@@ -1,9 +1,5 @@
 server:
-  port: ${PORT:0}
-
-eureka:
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  port: 8082
 
 spring:
   application:
@@ -18,3 +14,8 @@ spring:
       port: 27017
       host: localhost
       auto-index-creation: true
+
+eureka:
+    client:
+      fetch-registry: true
+      register-with-eureka: true

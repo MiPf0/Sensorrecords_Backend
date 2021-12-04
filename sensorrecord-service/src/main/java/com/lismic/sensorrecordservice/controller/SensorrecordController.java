@@ -18,7 +18,7 @@ public class SensorrecordController {
     private SensorrecordRepository repository;
 
     @PostMapping("/sensorrecords/addSensorrecord")
-    @CrossOrigin(origins = "localhost:3000")
+    //@CrossOrigin(origins = "localhost:3000")
     public String saveSensorrecord(@RequestBody Sensorrecord sensorrecord) {
         repository.save(sensorrecord);
         log.info("Inside saveSensorrecord method of SensorrecordController");
@@ -26,28 +26,29 @@ public class SensorrecordController {
     }
 
     @GetMapping("/sensorrecords/findAllSensorrecords")
-    @CrossOrigin(origins = "localhost:3000")
+    //@CrossOrigin(origins = "localhost:3000")
     public List<Sensorrecord> getSensorrecords() {
         log.info("Inside getSensorrecords method of SensorrecordController");
+        System.out.println("accessed");
         return repository.findAll();
     }
 
     @GetMapping("/sensorrecords/findSensorrecord/{id}")
-    @CrossOrigin(origins = "localhost:3000")
+    //@CrossOrigin(origins = "localhost:3000")
     public Optional<Sensorrecord> getSensorrecord(@PathVariable String id) {
         log.info("Inside getSensorrecord method of SensorrecordController");
         return repository.findById(id);
     }
 
     @GetMapping("/sensorrecords/findSensorrecords/sensors/{sensorId}")
-    @CrossOrigin(origins = "localhost:3000")
+    //@CrossOrigin(origins = "localhost:3000")
     public List<Sensorrecord> getSensorrecords(@PathVariable String sensorId) {
         log.info("Inside getSensorrecord method of SensorrecordController");
         return repository.findSensorrecordsBySensorId(sensorId);
     }
 
     @GetMapping("/sensorrecords/findNewestEntryPerSensorId")
-    @CrossOrigin(origins = "localhost:3000")
+    //@CrossOrigin(origins = "localhost:3000")
     public List<Sensorrecord> findNewestEntryPerSensorId() {
         List<Sensorrecord> allRecords = repository.findAll();
         allRecords.sort(Comparator.comparing(Sensorrecord::getTimestamp));
@@ -66,7 +67,7 @@ public class SensorrecordController {
     }
 
     @PutMapping("/sensorrecords/updateSensorrecord/{id}")
-    @CrossOrigin(origins = "localhost:3000")
+    //@CrossOrigin(origins = "localhost:3000")
     public ResponseEntity<Sensorrecord> updateSensorrecord(@PathVariable("id") String id, @RequestBody Sensorrecord sensorrecord) {
         Optional<Sensorrecord> optionalSensorrecord = repository.findById(id);
 
@@ -85,7 +86,7 @@ public class SensorrecordController {
     }
 
     @DeleteMapping("/sensorrecords/deleteSensorrecord/{id}")
-    @CrossOrigin(origins = "localhost:3000")
+    //@CrossOrigin(origins = "localhost:3000")
     public String deleteSensorrecord(@PathVariable String id) {
         repository.deleteById(id);
         log.info("Inside deleteSensorrecord method of SensorrecordController");
