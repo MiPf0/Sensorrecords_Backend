@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="deleted load balancing test service and implemented an http method for that instead in the sensorrecord service controller (api)">
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="improved http method &quot;updateNewestSensorrecord&quot; in Sensorrecord service controller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,8 +130,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
-        <item itemvalue="Spring Boot.ServiceRegistryApplication" />
         <item itemvalue="Spring Boot.CloudGatewayApplication" />
+        <item itemvalue="Spring Boot.ServiceRegistryApplication" />
         <item itemvalue="Spring Boot.CloudConfigServerApplication" />
         <item itemvalue="Docker.sensorrecord-service: Compose Deployment" />
       </list>
@@ -161,7 +163,7 @@
       <workItem from="1638633916935" duration="2942000" />
       <workItem from="1638694526789" duration="7978000" />
       <workItem from="1638706244324" duration="1576000" />
-      <workItem from="1638724283560" duration="6156000" />
+      <workItem from="1638724283560" duration="6873000" />
     </task>
     <task id="LOCAL-00001" summary="unified project structure to JDK 11&#10;made small adjustments">
       <created>1636757797645</created>
@@ -310,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638725315075</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="improved http method &quot;updateNewestSensorrecord&quot; in Sensorrecord service controller">
+      <created>1638730565731</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1638730565731</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +359,7 @@
     <MESSAGE value="added class &quot;SpringBootUtil&quot; to API Gateway application in order to handle dynamic port allocation which is also shown in eureka service registry and hence works with frontend" />
     <MESSAGE value="changed delete mapping: response HTTP-Code ok" />
     <MESSAGE value="deleted load balancing test service and implemented an http method for that instead in the sensorrecord service controller (api)" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted load balancing test service and implemented an http method for that instead in the sensorrecord service controller (api)" />
+    <MESSAGE value="improved http method &quot;updateNewestSensorrecord&quot; in Sensorrecord service controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved http method &quot;updateNewestSensorrecord&quot; in Sensorrecord service controller" />
   </component>
 </project>

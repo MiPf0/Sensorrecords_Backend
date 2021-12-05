@@ -67,8 +67,10 @@ public class SensorrecordController {
             _sensorrecord.setTemperature(sensorrecord.getTemperature());
             _sensorrecord.setHumidity(sensorrecord.getHumidity());
             _sensorrecord.setShowData(sensorrecord.isShowData());
+            log.info("Inside updateSensorrecord method of SensorrecordController");
             return new ResponseEntity<>(repository.save(_sensorrecord), HttpStatus.OK);
         } else {
+            log.info("Inside updateSensorrecord method of SensorrecordController");
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
@@ -96,9 +98,11 @@ public class SensorrecordController {
             }
 
             String relevantSensorrecordId = newestSensorrecord.getId();
+            log.info("Inside updateNewestSensorrecord method of SensorrecordController");
             return new ResponseEntity<>(repository.findById(relevantSensorrecordId), HttpStatus.OK);
 
         } else {
+            log.info("Inside updateNewestSensorrecord method of SensorrecordController");
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
