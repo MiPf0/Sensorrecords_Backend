@@ -37,6 +37,8 @@ public class CloudGatewayApplication extends CorsConfiguration {
                         .uri("lb://SENSORRECORD-SERVICE"))
                 .route(p -> p.path("/test/**")
                         .uri("lb://TEST-SERVICE"))
+                //.route(p -> p.path("/swagger-ui/**,/swagger-resources/**,/swagger-ui.html,/v2/api-docs,/webjars/**,/view/**")
+                //        .uri("lb://swagger-ui"))
                 .build();
     }
 }
