@@ -87,10 +87,12 @@ public class SensorrecordController {
 
     @DeleteMapping("/sensorrecords/deleteSensorrecord/{id}")
     //@CrossOrigin(origins = "localhost:3000")
-    public String deleteSensorrecord(@PathVariable String id) {
+    public ResponseEntity<?> deleteSensorrecord(@PathVariable String id) {
         repository.deleteById(id);
         log.info("Inside deleteSensorrecord method of SensorrecordController");
-        return "Sensorrecord deleted with id: " + id;
+        return new ResponseEntity<>(HttpStatus.OK);
     }
+
+    //return ResponseEntity.ok("deleted");
 
 }
