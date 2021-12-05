@@ -19,10 +19,10 @@ public class SensorrecordController {
 
     @PostMapping("/sensorrecords/addSensorrecord")
     //@CrossOrigin(origins = "localhost:3000")
-    public String saveSensorrecord(@RequestBody Sensorrecord sensorrecord) {
+    public ResponseEntity<Sensorrecord> saveSensorrecord(@RequestBody Sensorrecord sensorrecord) {
         repository.save(sensorrecord);
         log.info("Inside saveSensorrecord method of SensorrecordController");
-        return "Added sensor record with id : " + sensorrecord.getId() + "; with Timestamp: " + sensorrecord.getTimestamp();
+        return new ResponseEntity<>(sensorrecord, HttpStatus.CREATED);
     }
 
     @GetMapping("/sensorrecords/findAllSensorrecords")
