@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="changed delete mapping: response HTTP-Code ok">
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="deleted load balancing test service and implemented an http method for that instead in the sensorrecord service controller (api)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/main/java/com/lismic/loadbalancingtester/LoadbalancingTesterApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/main/java/com/lismic/loadbalancingtester/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/main/resources/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/test/java/com/lismic/loadbalancingtester/LoadbalancingTesterApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/SpringBootUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/SpringBootUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +50,7 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="ReactNative" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
@@ -92,13 +78,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lismic.cloud.gateway.CloudGatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoadbalancingTesterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="loadbalancing-test-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lismic.loadbalancingtester.LoadbalancingTesterApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,7 +120,6 @@
     </configuration>
     <list>
       <item itemvalue="Docker.sensorrecord-service: Compose Deployment" />
-      <item itemvalue="Spring Boot.LoadbalancingTesterApplication" />
       <item itemvalue="Spring Boot.ServiceRegistryApplication" />
       <item itemvalue="Spring Boot.CloudConfigServerApplication" />
       <item itemvalue="Spring Boot.CloudGatewayApplication" />
@@ -150,9 +128,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SensorrecordServiceApplication" />
+        <item itemvalue="Spring Boot.ServiceRegistryApplication" />
         <item itemvalue="Spring Boot.CloudGatewayApplication" />
         <item itemvalue="Spring Boot.CloudConfigServerApplication" />
-        <item itemvalue="Spring Boot.ServiceRegistryApplication" />
         <item itemvalue="Docker.sensorrecord-service: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -183,7 +161,7 @@
       <workItem from="1638633916935" duration="2942000" />
       <workItem from="1638694526789" duration="7978000" />
       <workItem from="1638706244324" duration="1576000" />
-      <workItem from="1638724283560" duration="976000" />
+      <workItem from="1638724283560" duration="6156000" />
     </task>
     <task id="LOCAL-00001" summary="unified project structure to JDK 11&#10;made small adjustments">
       <created>1636757797645</created>
@@ -325,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638707822514</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="deleted load balancing test service and implemented an http method for that instead in the sensorrecord service controller (api)">
+      <created>1638725315075</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1638725315075</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +349,7 @@
     <MESSAGE value="changed dynamic port in service to static port as this works with service registry and gateway and frontend, changed service registry properties" />
     <MESSAGE value="added class &quot;SpringBootUtil&quot; to API Gateway application in order to handle dynamic port allocation which is also shown in eureka service registry and hence works with frontend" />
     <MESSAGE value="changed delete mapping: response HTTP-Code ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed delete mapping: response HTTP-Code ok" />
+    <MESSAGE value="deleted load balancing test service and implemented an http method for that instead in the sensorrecord service controller (api)" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted load balancing test service and implemented an http method for that instead in the sensorrecord service controller (api)" />
   </component>
 </project>

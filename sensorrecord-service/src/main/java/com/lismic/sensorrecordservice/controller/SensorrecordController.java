@@ -48,25 +48,6 @@ public class SensorrecordController {
         return repository.findSensorrecordsBySensorId(sensorId);
     }
 
-    @GetMapping("/sensorrecords/findNewestEntryPerSensorId")
-    //@CrossOrigin(origins = "localhost:3000")
-    public List<Sensorrecord> findNewestEntryPerSensorId() {
-        List<Sensorrecord> allRecords = repository.findAll();
-        allRecords.sort(Comparator.comparing(Sensorrecord::getTimestamp));
-        allRecords.sort(Comparator.comparing(Sensorrecord::getSensorId));
-
-        /*String currentSensorId = "";
-
-        for (Sensorrecord sr : allRecords) {
-            if (sr.getSensorId().equals(currentSensorId)) {
-                allRecords.remove(sr);
-            }
-            currentSensorId = sr.getSensorId();
-        }*/
-
-        return allRecords;
-    }
-
     @GetMapping("/sensorrecords/loadBalancingTest")
     public String testService(HttpServletRequest request) {
         System.out.println("I am " + request.getRequestURL().toString());
@@ -87,6 +68,36 @@ public class SensorrecordController {
             _sensorrecord.setHumidity(sensorrecord.getHumidity());
             _sensorrecord.setShowData(sensorrecord.isShowData());
             return new ResponseEntity<>(repository.save(_sensorrecord), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @PutMapping("/sensorrecords/updateNewestSensorrecord/{id}")
+    //@CrossOrigin(origins = "localhost:3000")
+    public ResponseEntity<?> updateNewestSensorrecord(@PathVariable("id") String id, @RequestBody Sensorrecord sensorrecord) {
+        Optional<Sensorrecord> optionalSensorrecord = repository.findById(id);
+
+        if (optionalSensorrecord.isPresent()) {
+
+            String relevantSensorId = sensorrecord.getSensorId();
+
+            Sensorrecord newestSensorrecord = new Sensorrecord();
+            newestSensorrecord.setTimestamp("631177200");
+
+            List<Sensorrecord> allRecords = repository.findAll();
+
+            for (Sensorrecord sr : allRecords) {
+                if (sr.getSensorId().equals(relevantSensorId)) {
+                    if (Integer.parseInt(sr.getTimestamp())>Integer.parseInt(newestSensorrecord.getTimestamp())) {
+                        newestSensorrecord = sr;
+                    }
+                }
+            }
+
+            String relevantSensorrecordId = newestSensorrecord.getId();
+            return new ResponseEntity<>(repository.findById(relevantSensorrecordId), HttpStatus.OK);
+
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
