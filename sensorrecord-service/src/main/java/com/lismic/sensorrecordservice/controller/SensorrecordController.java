@@ -85,7 +85,7 @@ public class SensorrecordController {
             String relevantSensorId = sensorrecord.getSensorId();
 
             Sensorrecord newestSensorrecord = new Sensorrecord();
-            newestSensorrecord.setTimestamp("631177200");
+            newestSensorrecord.setTimestamp("631177200"); //timestamp set to 01.01.1990
 
             List<Sensorrecord> allRecords = repository.findAll();
 
