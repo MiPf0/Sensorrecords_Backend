@@ -4,9 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="added class &quot;SpringBootUtil&quot; to API Gateway application in order to handle dynamic port allocation which is also shown in eureka service registry and hence works with frontend">
+    <list default="true" id="b146f0f6-826e-408f-8cfb-f4cab9799c76" name="Changes" comment="changed delete mapping: response HTTP-Code ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/lismic/cloud/gateway/CloudGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/main/java/com/lismic/loadbalancingtester/LoadbalancingTesterApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/main/java/com/lismic/loadbalancingtester/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadbalancing-test-service/src/test/java/com/lismic/loadbalancingtester/LoadbalancingTesterApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/SpringBootUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/SpringBootUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/java/com/lismic/sensorrecordservice/controller/SensorrecordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensorrecord-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sensorrecord-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +182,8 @@
       <workItem from="1638612754001" duration="5800000" />
       <workItem from="1638633916935" duration="2942000" />
       <workItem from="1638694526789" duration="7978000" />
-      <workItem from="1638706244324" duration="1479000" />
+      <workItem from="1638706244324" duration="1576000" />
+      <workItem from="1638724283560" duration="976000" />
     </task>
     <task id="LOCAL-00001" summary="unified project structure to JDK 11&#10;made small adjustments">
       <created>1636757797645</created>
@@ -302,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638697495413</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="changed delete mapping: response HTTP-Code ok">
+      <created>1638707822514</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1638707822514</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +363,7 @@
     <MESSAGE value="changed in config server main application &quot;@EnableEurekaClient&quot; to &quot;@EnableDiscoveryClient&quot; in order to have same annotation for all eureka clients" />
     <MESSAGE value="changed dynamic port in service to static port as this works with service registry and gateway and frontend, changed service registry properties" />
     <MESSAGE value="added class &quot;SpringBootUtil&quot; to API Gateway application in order to handle dynamic port allocation which is also shown in eureka service registry and hence works with frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="added class &quot;SpringBootUtil&quot; to API Gateway application in order to handle dynamic port allocation which is also shown in eureka service registry and hence works with frontend" />
+    <MESSAGE value="changed delete mapping: response HTTP-Code ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed delete mapping: response HTTP-Code ok" />
   </component>
 </project>

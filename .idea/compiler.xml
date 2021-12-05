@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="loadbalancing-test-service" />
         <module name="sensorrecord-service" />
         <module name="cloud-config-server" />
         <module name="cloud-gateway" />

@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.*;
 
 @RestController
@@ -66,6 +67,12 @@ public class SensorrecordController {
         return allRecords;
     }
 
+    @GetMapping("/sensorrecords/loadBalancingTest")
+    public String testService(HttpServletRequest request) {
+        System.out.println("I am " + request.getRequestURL().toString());
+        return request.getRequestURL().toString();
+    }
+
     @PutMapping("/sensorrecords/updateSensorrecord/{id}")
     //@CrossOrigin(origins = "localhost:3000")
     public ResponseEntity<Sensorrecord> updateSensorrecord(@PathVariable("id") String id, @RequestBody Sensorrecord sensorrecord) {
@@ -92,7 +99,4 @@ public class SensorrecordController {
         log.info("Inside deleteSensorrecord method of SensorrecordController");
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-    //return ResponseEntity.ok("deleted");
-
 }

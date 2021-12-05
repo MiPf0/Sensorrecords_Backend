@@ -1,12 +1,11 @@
 package com.lismic.sensorrecordservice;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.SocketUtils;
 import org.springframework.util.StringUtils;
 
+@Slf4j
 public class SpringBootUtil {
-    final static Logger log = LoggerFactory.getLogger(SpringBootUtil.class);
 
     public static void setRandomPort(int minPort, int maxPort) {
         try {
