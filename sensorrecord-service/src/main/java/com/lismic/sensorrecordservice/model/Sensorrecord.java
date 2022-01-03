@@ -17,6 +17,7 @@ import java.util.Date;
 
 @Document(collection="sensorrecord")
 public class Sensorrecord {
+
     @Id
     private String id = String.valueOf(new ObjectId());
     @CreatedDate

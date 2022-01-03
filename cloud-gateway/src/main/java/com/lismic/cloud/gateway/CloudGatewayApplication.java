@@ -15,6 +15,7 @@ import org.springframework.web.cors.CorsConfiguration;
 @SpringBootApplication
 @EnableDiscoveryClient
 @CrossOrigin
+//@EnableSwagger2 //könnte man auch machen
 public class CloudGatewayApplication extends CorsConfiguration {
 
     /**
